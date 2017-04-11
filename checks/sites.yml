@@ -1,0 +1,23 @@
+kmerrill.com:
+    url: https://kcmerrill.com
+    try: 3
+    every: 10s
+    notify: slack
+
+crush.kcmerrill.com:
+    url: https://crush.kcmerrill.com
+    params: --status 404
+    try: 3
+    every: 10s
+    notify: slack
+
+yoda.kcmerrill.com:
+    url: https://yoda.kcmerrill.com
+    every: 10s
+    try: 3
+    notify: slack
+
+go-dist.kcmerrill.com:
+    url: https://go-dist.kcmerrill.com/kcmerrill/alfred
+    every: 10s
+    notify: slack
