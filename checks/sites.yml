@@ -2,22 +2,26 @@ kmerrill.com:
     url: https://kcmerrill.com
     try: 3
     every: 10s
-    notify: slack
+    fails: slack.failed
+    recovers: slack.recovered
 
 crush.kcmerrill.com:
     url: https://crush.kcmerrill.com
     params: --status 404
     try: 3
     every: 10s
-    notify: slack
+    fails: slack.failed
+    recovers: slack.recovered
 
 yoda.kcmerrill.com:
     url: https://yoda.kcmerrill.com
     every: 10s
     try: 3
-    notify: slack
+    fails: slack.failed
+    recovers: slack.recovered
 
 go-dist.kcmerrill.com:
     url: https://go-dist.kcmerrill.com/kcmerrill/alfred
     every: 10s
-    notify: slack
+    fails: slack.failed
+    recovers: slack.recovered

@@ -1,2 +1,8 @@
-slack:
-    params: --webhook=https://hooks.slack.com/services/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
+slack.recovered:
+    internal: slack
+    params: --webhook=https://hooks.slack.com/services/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 --color=good --status=Recovered
+
+slack.failed:
+    internal: slack
+    params: --webhook=https://hooks.slack.com/services/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 --color=danger --status=Failure
+    template: "{{ index .Name }} failed. Attempted {{ index .Attempts }} times before alerting"
