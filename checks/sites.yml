@@ -1,4 +1,4 @@
-kmerrill.com:
+kcmerrill.com:
     url: https://kcmerrill.com
     try: 3
     every: 10s
