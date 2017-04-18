@@ -1,4 +1,4 @@
-kmerrill.com:
+kcmerrill.com:
     url: https://kcmerrill.com
     try: 3
     every: 10s
@@ -23,5 +23,6 @@ yoda.kcmerrill.com:
 go-dist.kcmerrill.com:
     url: https://go-dist.kcmerrill.com/kcmerrill/alfred
     every: 10s
+    try: 3
     fails: slack.failed
     recovers: slack.recovered
