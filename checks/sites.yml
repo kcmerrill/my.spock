@@ -1,14 +1,14 @@
 spock.kcmerrill.com:
     url: https://spock.kcmerrill.com
     try: 3
-    every: 10s
+    every: 30s
     fails: slack.failed
     recovers: slack.recovered
 
 kcmerrill.com:
     url: https://kcmerrill.com
     try: 3
-    every: 10s
+    every: 30s
     fails: slack.failed
     recovers: slack.recovered
 
@@ -16,20 +16,20 @@ crush.kcmerrill.com:
     url: https://crush.kcmerrill.com
     params: --status 404
     try: 3
-    every: 10s
+    every: 1h
     fails: slack.failed
     recovers: slack.recovered
 
 yoda.kcmerrill.com:
     url: https://yoda.kcmerrill.com
-    every: 10s
+    every: 1m
     try: 3
     fails: slack.failed
     recovers: slack.recovered
 
 go-dist.kcmerrill.com:
     url: https://go-dist.kcmerrill.com/kcmerrill/alfred
-    every: 10s
+    every: 1m
     try: 3
     fails: slack.failed
     recovers: slack.recovered
